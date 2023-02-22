@@ -1,0 +1,11 @@
+C:\Users\dugfi\OneDrive\Desktop\repos\Color Switch Game\bin\Debug\Color Switch Game.exe.config
+C:\Users\dugfi\OneDrive\Desktop\repos\Color Switch Game\bin\Debug\Color Switch Game.exe
+C:\Users\dugfi\OneDrive\Desktop\repos\Color Switch Game\bin\Debug\Color Switch Game.pdb
+C:\Users\dugfi\OneDrive\Desktop\repos\Color Switch Game\obj\Debug\Color Switch Game.csproj.AssemblyReference.cache
+C:\Users\dugfi\OneDrive\Desktop\repos\Color Switch Game\obj\Debug\Color Switch Game.csproj.SuggestedBindingRedirects.cache
+C:\Users\dugfi\OneDrive\Desktop\repos\Color Switch Game\obj\Debug\Color_Switch_Game.Form1.resources
+C:\Users\dugfi\OneDrive\Desktop\repos\Color Switch Game\obj\Debug\Color_Switch_Game.Properties.Resources.resources
+C:\Users\dugfi\OneDrive\Desktop\repos\Color Switch Game\obj\Debug\Color Switch Game.csproj.GenerateResource.cache
+C:\Users\dugfi\OneDrive\Desktop\repos\Color Switch Game\obj\Debug\Color Switch Game.csproj.CoreCompileInputs.cache
+C:\Users\dugfi\OneDrive\Desktop\repos\Color Switch Game\obj\Debug\Color Switch Game.exe
+C:\Users\dugfi\OneDrive\Desktop\repos\Color Switch Game\obj\Debug\Color Switch Game.pdb
