@@ -59,11 +59,28 @@ namespace Color_Switch_Game
 
                         score += 1;
                     }
+
+                    if (player.Bounds.IntersectsWith(x.Bounds))
+                    {
+                        if (player.BackColor != x.BackColor)
+                        {
+                            GameTimer.Stop();
+                            listBox1.Items.Insert(0, "Scored: " + score + "@" + string.Format(" {0:HH:mm tt} ", DateTime.Now));
+                            gameOver = true;
+                        }
+                    }
+
                 }
+
+            }
+            
+            if (score >= 5)
+            {
+                speed = 10;
             }
 
         }
-
+ 
         private void KeyIsPressed(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Space && gameOver == false)
