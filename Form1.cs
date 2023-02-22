@@ -22,6 +22,8 @@ namespace Color_Switch_Game
         int score = 0;
         int location;
 
+        int blockColor;
+
         bool gameOver = false;
         public Form1()
         {
@@ -39,7 +41,7 @@ namespace Color_Switch_Game
         {
             txtScore.Text = "Score: " + score;
 
-            foreach (Control x in this.Controls)
+            foreach (Control x in gameDisplay.Controls)
             {
                 if (x is PictureBox && (string)x.Tag == "block")
                 {
@@ -51,7 +53,9 @@ namespace Color_Switch_Game
 
                         x.Top = location * -1;
 
-                        x.BackColor = colors[rnd.Next(0, colors.Count)];
+                        blockColor = rnd.Next(0, colors.Count);
+
+                        x.BackColor = colors[blockColor];
 
                         score += 1;
                     }
