@@ -78,6 +78,10 @@ namespace Color_Switch_Game
             {
                 speed = 10;
             }
+            if (score >= 10)
+            {
+                speed = 12;
+            }
 
         }
  
