@@ -37,6 +37,26 @@ namespace Color_Switch_Game
 
         private void MainTimerTick(object sender, EventArgs e)
         {
+            txtScore.Text = "Score: " + score;
+
+            foreach (Control x in this.Controls)
+            {
+                if (x is PictureBox && (string)x.Tag == "block")
+                {
+                    x.Top += speed;
+
+                    if (x.Top + x.Height > this.ClientSize.Height)
+                    {
+                        location = blockPosition.Next(400, 600) + (3 * blockPosition.Next(150, 250));
+
+                        x.Top = location * -1;
+
+                        x.BackColor = colors[rnd.Next(0, colors.Count)];
+
+                        score += 1;
+                    }
+                }
+            }
 
         }
 
@@ -50,10 +70,19 @@ namespace Color_Switch_Game
                 {
                     i = 0;
                 }
-            }
 
-            player.BackColor = colors[i];
+                player.BackColor = colors[i];                                //Changes Color Of Player
+            }                                                     //All Coditions Met For Restart, R or r casing.          
+
+            if (e.KeyChar == (char)Keys.R && gameOver == true || e.KeyChar == char.ToLower((char)Keys.R) && gameOver == true)
+            {
+                RestartGame();
+            }
+            
+
         }
+
+
 
         //Restart Function
 
